@@ -1,0 +1,1 @@
+web: gunicorn blockchange.wsgi --log-file -

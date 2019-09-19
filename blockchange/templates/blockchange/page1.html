@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html class="h-100">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/sticky-footer/">
+    <link href="sticky-footer.css" rel="stylesheet">
+
+    <title>BLOCKCHANGE 블록체인지</title>
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        @font-face {
+            font-family: 'InkLipquid';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'NIXGONM-Vb';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONM-Vb.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .nanumsquare {
+            font-family: 'NanumSquare', sans-serif !important;
+        }
+
+        .navbar {
+            font-family: 'NanumSquare';
+            background-color: #3C0078;
+        }
+
+        .nanumsquare {
+            font-family: 'NanumSquare', sans-serif !important;
+        }
+
+        .pagenumber {
+            text-align: center;
+        }
+
+        .nixgonm {
+            font-family: 'NIXGONM-Vb';
+        }
+
+        .footer {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" style="font-size: 2rem;" href="/">BlockChange</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-item nav-link active" href="/">About 블록체인</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link" href="{% url 'page2' %}">블록체인 기본원리</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link" href="{% url 'page3' %}">블록체인의 종류</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-item nav-link" href="{% url 'page4' %}">활용 분야</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link" href="{% url 'page5' %}">에스토니아에서는</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link" href="{% url 'page6' %}">교육프로그램</a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container nanumsquare" style="margin-top: 5rem;">
+        <div class="row">
+
+            <div class="col-9">
+
+                <p class="h1">블록체인이 뭔데요?</p><br>
+                <p>▶ 블록체인은 <b>데이터 분산 처리 기술</b> ! </p>
+                <img class="mx-auto d-block" src="images/blockchain-vector-free-icon-set-37.png"
+                    style="width: 20%; margin-right: 5%">
+                <p>블록체인 네트워크에 참여하는 모든 사용자가 모든 거래 내역 등의 데이터를 분산 및 저장, 즉 체인 형태로 묶여있기 때문에 ‘블록체인’이라는 이름이 붙었습니다.</p>
+                <img class="mx-auto d-block" src="images/blockchain-vector-free-icon-set-33.png"
+                    style="width: 20%; margin-right: 5%">
+                <br>
+                <ul>
+                    <li>블록: 개인과 개인의 거래(교류)가 기록되는 장부</li>
+                    <li>체인: 블록들이 형성된 후 시간의 흐름에 따라 순차적으로 가지게 되는 구조 (‘사슬’의 형태)</li>
+                </ul>
+                <br><br><br>
+            </div>
+            <div class="col"></div>
+        </div>
+
+        <div class="row">
+            <div class="col"></div>
+
+            <div class="col-9">
+
+                <p class="h1">기존 거래와 블록체인간의 차이점은 무엇인가요?</p><br>
+                <img class="mx-auto d-block" src="images/SWcenter.jpg" style="width: 70%;">
+                <p class="text-center text-muted"><span>(출처<span>: SW </span>중심사회<span>)</p>
+                <ul>
+                    <li>기존 거래 방식: 은행이 모든 거래 내역 보유. 중앙에서 모든 거래를 감독하고 증명하는 중개자 역할을 수행</li>
+                    <li>블록체인 거래 방식: 거래 내역을 특정 중앙 기관에서 독점하여 보유하지 않고 여러 명이 나누어 가짐. </li>
+                </ul>
+                <br><br><br>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-8">
+                <h1><span>블록체인의 특징은 무엇인가요<span>?</span></span></h1>
+                <p><b><span>▶ 분산저장<span>!</span></span></b></p>
+                <p>&nbsp;</p>
+                <img class="mx-auto d-block" src="images/blockchain-vector-free-icon-set-24.png"
+                    style="width: 20%; margin-right: 5%">
+
+                <p><span><span>①<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span>데이터 위변조
+                        방지</span>
+                </p>
+                <p><span>기존 거래 방식에서 데이터를 위변조하기 위해서는 은행의 중앙서버를 공격하면 가능했습니다<span>. </span>그러나 블록체인은 여러 명이 데이터를
+                        저장하기
+                        때문에
+                        위변조가
+                        어렵습니다<span>. </span>블록체인 네트워크를 위변조하기 위해서는 참여자의 거래 데이터를 모두 공격해야 하기 떄문에 사실상 해킹은 불가능하다고
+                        여겨집니다<span>.</span></span></p>
+                <p>&nbsp;</p>
+                <img class="mx-auto d-block" src="images/blockchain-vector-free-icon-set-27.png"
+                    style="width: 20%; margin-right: 5%">
+
+                <p><span><span>②<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span>탈중앙화</span></p>
+                <p><span>블록체인은 중앙 관리자가 필요 없다는 점도 특징으로 꼽힙니다<span>. </span>은행이나 정부 등 중앙기관이나 중앙 관리자가 필요했던 것은 공식적인
+                        증명<span>,
+                        </span>등기<span>, </span>인증 등이 필요했기 때문이죠<span>. </span>그러나 블록체인은 다수가 데이터를 저장<span>,
+                        </span>증명하기
+                        때문에
+                        중앙관리자가 존재하지 않게 됩니다<span>.</span></span></p>
+                <p><span>중앙기관의 역할을 필요로 하지 않는 블록체인의 이러한 특징 덕분에<span>, &lsquo;</span>중앙은행<span>&rsquo;</span>이 없이도
+                        화폐
+                        발행이
+                        가능하게
+                        됩니다<span>. </span>비트코인을 원하는 사람들이 직접 <span>&lsquo;</span>채굴<span>&rsquo;</span>을 통해
+                        <span>&lsquo;</span>발행<span>&rsquo;</span>할 수 있죠<span>. </span>우리 손으로 화폐의 발행과 유통을 가능케 할
+                        수 있는
+                        것입니다<span>.</span></span></p>
+                <p><span>&nbsp;</span></p>
+                <p><span>&nbsp;</span></p>
+                <p><span>+) </span><span>현재로서는 블록체인 기반 가상화폐의 화폐가치가 변동성이 매우 크고 투기성이 지적되는 등 부정적인 측면이 완전히 해결되지 않았기
+                        때문에<span>,
+                        </span>중앙기관과 은행을 대체하기는 어려워 보입니다<span>. </span>하지만 블록체인이 가진 높은 신뢰성과 보안성은 안전한 네트워크를 필요로 하는
+                        산업
+                        전반에
+                        확산될
+                        것으로 보입니다<span>.</span></span></p>
+                <br><br><br>
+            </div>
+
+            <div class="col">
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <footer class="footer mt-auto py-3">
+        <div class="container">
+            <span class="text-muted">2019. 덕성여자대학교 글로벌챌린저 블록체인지</span>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
