@@ -3,7 +3,7 @@ from django.shortcuts import render
 
 
 def home(request):
-    return render(request, 'blockchange/page1.html')
+    return render(request, 'blockchange/index.html')
 
 def page2(request):
     return render(request, 'blockchange/page2.html')
